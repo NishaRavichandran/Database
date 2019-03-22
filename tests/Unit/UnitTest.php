@@ -34,4 +34,9 @@ class UnitTest extends TestCase
         $user = User::inrandomorder()->first();
         $this->assertStringMatchesFormat('%s@%s',$user->email);
     }
+    public function testExample4()
+    {
+        $user = Post::inrandomorder()->first();
+        $this->assertNull($user->name);
+    }
 }
