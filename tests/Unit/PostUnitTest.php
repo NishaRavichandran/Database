@@ -42,4 +42,11 @@ class PostUnitTest extends TestCase
         $this->assertNull($post->name);
     }
 
+    public function testExample5()
+    {
+        $post = Post::all();
+
+        $this->assertCount(500,$post);
+    }
+
 }
