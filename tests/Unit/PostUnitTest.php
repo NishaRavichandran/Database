@@ -22,5 +22,12 @@ class PostUnitTest extends TestCase
         $this->assertInstanceOf('App\Post',$post);
     }
 
+    public function testExample2()
+    {
+        $post = Post::inrandomorder()->first();
+
+        $this->assertIsString($post->title);
+    }
+
 
 }

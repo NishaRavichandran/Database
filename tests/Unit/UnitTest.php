@@ -22,4 +22,11 @@ class UnitTest extends TestCase
         $this->assertInstanceOf('App\User',$user);
     }
 
+    public function testExample2()
+    {
+        $user = User::inrandomorder()->first();
+
+        $this->assertIsString($user->name);
+    }
+
 }
