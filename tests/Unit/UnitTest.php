@@ -45,6 +45,6 @@ class UnitTest extends TestCase
     {
         $user = User::all();
 
-        $this->assertCount(500, $user);
+        $this->assertCount(502, $user);
     }
 }
