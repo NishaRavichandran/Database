@@ -8,18 +8,18 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\User;
 
-//class UnitTest extends TestCase
-//{
+class UnitTest extends TestCase
+{
     /**
      * A basic unit test example.
      *
      * @return void
      */
-    //public function testExample1()
-    //{
-        //$user = User::inrandomorder()->first();
+    public function testExample1()
+    {
+        $user = User::inrandomorder()->first();
 
-        //$this->assertInstanceOf('App\User',$user);
-    //}
+        $this->assertInstanceOf('App\User',$user);
+    }
 
-//}
+}
