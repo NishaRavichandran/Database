@@ -29,5 +29,10 @@ class PostUnitTest extends TestCase
         $this->assertIsString($post->title);
     }
 
+    public function testExample3()
+    {
+        $post = Post::inrandomorder()->first();
+        $this->assertStringMatchesFormat('%a',$post->title);
+    }
 
 }
