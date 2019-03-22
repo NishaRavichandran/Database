@@ -16,7 +16,7 @@ class LoginTest extends TestCase
     public function testExample()
     {
         $response = $this->get('/login');
-
+        
         $response->assertStatus(200);
     }
 }
