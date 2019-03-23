@@ -70,5 +70,8 @@ class UnitTest extends TestCase
         $this->assertFileIsReadable('tests/Feature/RegisterTest.php');
     }
 
-    
+    public function testExample10()
+    {
+        $this->assertFileIsWritable('tests/Unit/PostUnitTest.php');
+    }
 }
