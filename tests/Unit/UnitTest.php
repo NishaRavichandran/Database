@@ -32,12 +32,14 @@ class UnitTest extends TestCase
     public function testExample3()
     {
         $user = User::inrandomorder()->first();
+
         $this->assertStringMatchesFormat('%s@%s',$user->email);
     }
 
     public function testExample4()
     {
         $user = Post::inrandomorder()->first();
+
         $this->assertNull($user->name);
     }
 
@@ -46,5 +48,10 @@ class UnitTest extends TestCase
         $user = User::all();
 
         $this->assertCount(502, $user);
+    }
+
+    public function testExample6()
+    {
+        $this->assertDirectoryExists('tests/Unit');
     }
 }
