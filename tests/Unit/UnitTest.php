@@ -54,4 +54,11 @@ class UnitTest extends TestCase
     {
         $this->assertDirectoryExists('tests/Unit');
     }
+
+    public function testExample7()
+    {
+        $this->assertFileNotEquals('tests/Unit/UnitTest.php', 'tests/Feature/LoginTest.php');
+    }
+
+    
 }
