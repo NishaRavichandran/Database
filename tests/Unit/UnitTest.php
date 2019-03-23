@@ -60,5 +60,8 @@ class UnitTest extends TestCase
         $this->assertFileNotEquals('tests/Unit/UnitTest.php', 'tests/Feature/LoginTest.php');
     }
 
-    
+    public function testExample8()
+    {
+        $this->assertFileExists('tests/Feature/ExampleTest.php', 'The file does not Exist');
+    }
 }
