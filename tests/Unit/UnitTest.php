@@ -64,4 +64,11 @@ class UnitTest extends TestCase
     {
         $this->assertFileExists('tests/Feature/ExampleTest.php', 'The file does not Exist');
     }
+
+    public function testExample9()
+    {
+        $this->assertFileIsReadable('tests/Feature/RegisterTest.php');
+    }
+
+    
 }
